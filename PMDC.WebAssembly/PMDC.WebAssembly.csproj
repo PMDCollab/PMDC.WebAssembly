@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <WasmShellIndexHtmlPath>index.html</WasmShellIndexHtmlPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <LinkerDescriptor Include="LinkerConfig.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="FAudio.a" />
+    <Content Include="FNA3D.a" />
+    <Content Include="libmojoshader.a" />
+    <Content Include="SDL2.a" />
+    <Content Include="lua54.a" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Uno.Wasm.Bootstrap" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PMDC\RogueEssence\RogueEssence\RogueEssence.csproj" />
+    <ProjectReference Include="..\PMDC\PMDC\PMDC.csproj" />
+    <ProjectReference Include="..\PMDC\RogueEssence\FNA\FNA.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WasmShellExtraEmccFlags Include="-s MIN_WEBGL_VERSION=2 -s MAX_WEBGL_VERSION=2 -s EXIT_RUNTIME=1" />
+    <WasmShellExtraEmccFlags Include="--preload-file /home/marco/dev/pmdcollab/PMDC.WebAssembly/PMDC.WebAssembly/Content@Content" />
+  </ItemGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <WasmShellMonoRuntimeExecutionMode>Interpreter</WasmShellMonoRuntimeExecutionMode>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <WasmShellMonoRuntimeExecutionMode>InterpreterAndAOT</WasmShellMonoRuntimeExecutionMode>
+  </PropertyGroup>
+  
+  <Target Name="MoveDataFile" AfterTargets="BuildDist">
+    <Move SourceFiles="$(WasmShellOutputPackagePath)\dotnet.data" DestinationFolder="$(OutDir)dist" />
+  </Target>
+</Project>
+

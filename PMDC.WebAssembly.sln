@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMDC.WebAssembly", "PMDC.WebAssembly\PMDC.WebAssembly.csproj", "{62FAF46C-9407-4762-9C19-D5B799E26EAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMDC", "PMDC\PMDC\PMDC.csproj", "{BBF77001-98E9-4FCD-90FB-626B555CE418}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FNA.Core", "PMDC\RogueEssence\FNA\FNA.Core.csproj", "{D86AD331-E24E-4FFE-84A7-5BE4B90AC357}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RogueEssence.Editor.Avalonia", "PMDC\RogueEssence\RogueEssence.Editor.Avalonia\RogueEssence.Editor.Avalonia.csproj", "{030CD609-9E05-4159-9232-EC8EB81F7658}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RogueEssence", "PMDC\RogueEssence\RogueEssence\RogueEssence.csproj", "{F22CC8D0-B26B-458E-9F6E-A3AC20A57827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RogueElements", "PMDC\RogueEssence\RogueElements\RogueElements\RogueElements.csproj", "{A777BC3D-2635-401D-96D7-162178D8DFC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeraLua.net5.0", "KeraLua\build\net5.0\KeraLua.net5.0.csproj", "{0E4BDA2F-75B2-49E9-9653-AB34A054D833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLua.net5.0", "NLua\build\net5.0\NLua.net5.0.csproj", "{75DB6FC3-D09D-4CD8-B97B-F72791C1C250}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62FAF46C-9407-4762-9C19-D5B799E26EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62FAF46C-9407-4762-9C19-D5B799E26EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62FAF46C-9407-4762-9C19-D5B799E26EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62FAF46C-9407-4762-9C19-D5B799E26EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF77001-98E9-4FCD-90FB-626B555CE418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF77001-98E9-4FCD-90FB-626B555CE418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF77001-98E9-4FCD-90FB-626B555CE418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF77001-98E9-4FCD-90FB-626B555CE418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D86AD331-E24E-4FFE-84A7-5BE4B90AC357}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{D86AD331-E24E-4FFE-84A7-5BE4B90AC357}.Debug|Any CPU.Build.0 = Debug|x64
+		{D86AD331-E24E-4FFE-84A7-5BE4B90AC357}.Release|Any CPU.ActiveCfg = Release|x64
+		{D86AD331-E24E-4FFE-84A7-5BE4B90AC357}.Release|Any CPU.Build.0 = Release|x64
+		{030CD609-9E05-4159-9232-EC8EB81F7658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{030CD609-9E05-4159-9232-EC8EB81F7658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{030CD609-9E05-4159-9232-EC8EB81F7658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{030CD609-9E05-4159-9232-EC8EB81F7658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F22CC8D0-B26B-458E-9F6E-A3AC20A57827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F22CC8D0-B26B-458E-9F6E-A3AC20A57827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F22CC8D0-B26B-458E-9F6E-A3AC20A57827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F22CC8D0-B26B-458E-9F6E-A3AC20A57827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A777BC3D-2635-401D-96D7-162178D8DFC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A777BC3D-2635-401D-96D7-162178D8DFC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A777BC3D-2635-401D-96D7-162178D8DFC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A777BC3D-2635-401D-96D7-162178D8DFC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E4BDA2F-75B2-49E9-9653-AB34A054D833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E4BDA2F-75B2-49E9-9653-AB34A054D833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E4BDA2F-75B2-49E9-9653-AB34A054D833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E4BDA2F-75B2-49E9-9653-AB34A054D833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75DB6FC3-D09D-4CD8-B97B-F72791C1C250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75DB6FC3-D09D-4CD8-B97B-F72791C1C250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75DB6FC3-D09D-4CD8-B97B-F72791C1C250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75DB6FC3-D09D-4CD8-B97B-F72791C1C250}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

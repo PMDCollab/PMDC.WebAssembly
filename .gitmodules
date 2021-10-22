@@ -1,0 +1,9 @@
+[submodule "PMDC"]
+	path = PMDC
+	url = https://github.com/theCapypara/PMDC
+[submodule "KeraLua"]
+	path = KeraLua
+	url = https://github.com/theCapypara/KeraLua.git
+[submodule "NLua"]
+	path = NLua
+	url = https://github.com/theCapypara/NLua.git
